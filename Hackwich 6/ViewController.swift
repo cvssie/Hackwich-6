@@ -9,15 +9,15 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var myFriendsArray = ["Daphnie", "Makamae", "Orion"]
+    
    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>; func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 1;
-        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    
                let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
                        let text = myFriendsArray[indexPath.row]
                        cell.textLabel?.text = text
